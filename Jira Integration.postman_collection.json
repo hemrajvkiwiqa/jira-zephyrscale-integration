@@ -1,0 +1,840 @@
+{
+	"info": {
+		"_postman_id": "7d23f282-bbf8-4f34-aa71-87c742ccdad6",
+		"name": "Jira Integration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Test Cycle",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/testcycles?startAt=1&maxResults=3000",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"testcycles"
+					],
+					"query": [
+						{
+							"key": "startAt",
+							"value": "1"
+						},
+						{
+							"key": "maxResults",
+							"value": "3000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Spacific Test Cycle",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/testcycles/PAN-R628",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"testcycles",
+						"PAN-R628"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get TestCase Using ZAPI",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/testcycles/1364688",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"testcycles",
+						"1364688"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Projects Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/projects/33823",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"projects",
+						"33823"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Folders",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/folders?startAt=1&maxResults=20000&projectKey=PAN&folderType=TEST_CYCLE",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"folders"
+					],
+					"query": [
+						{
+							"key": "startAt",
+							"value": "1"
+						},
+						{
+							"key": "maxResults",
+							"value": "20000"
+						},
+						{
+							"key": "projectKey",
+							"value": "PAN"
+						},
+						{
+							"key": "folderType",
+							"value": "TEST_CYCLE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Folder Details Root",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/folders/1694948",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"folders",
+						"1694948"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Folder Details September",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/folders/1694949",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"folders",
+						"1694949"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Create Folder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"parentId\":1689960 ,\r\n\"name\": \"October\",\r\n\"projectKey\": \"UBA\",\r\n\"folderType\": \"TEST_CYCLE\"\r\n}"
+				},
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/folders",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"folders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get TestCases",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/testcases?projectKey=PAN&folderId=1695041&maxResults=10000&startAt=0",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"testcases"
+					],
+					"query": [
+						{
+							"key": "projectKey",
+							"value": "PAN"
+						},
+						{
+							"key": "folderId",
+							"value": "1695041"
+						},
+						{
+							"key": "maxResults",
+							"value": "10000"
+						},
+						{
+							"key": "startAt",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get TestCase",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/testcases/PAN-T8645",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"testcases",
+						"PAN-T8645"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Update TestCase",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 13922275,\r\n  \"key\": \"PAN-T8645\",\r\n  \"name\": \"Demo Automation Jira Integration Testing Login Dashboard.\",\r\n  \"project\": {\r\n    \"id\": 33823,\r\n        \"self\": \"https://api.zephyrscale.smartbear.com/v2/projects/33823\"\r\n  },\r\n   \"createdOn\": \"2021-09-06T07:54:28Z\",\r\n    \"objective\": null,\r\n    \"precondition\": null,\r\n    \"estimatedTime\": null,\r\n    \"labels\": [],\r\n    \"component\": {\r\n        \"id\": 10023,\r\n        \"self\": \"https://ubicquia.atlassian.net/rest/api/2/component/10023\"\r\n    },\r\n    \"priority\": {\r\n        \"id\": 590702,\r\n        \"self\": \"https://api.zephyrscale.smartbear.com/v2/priorities/590702\"\r\n    },\r\n  \"status\": {\r\n    \"id\": 836404,\r\n    \"self\": \"https://api.zephyrscale.smartbear.com/v2/statuses/836404\"\r\n  },\r\n   \"folder\": {\r\n        \"id\": 1695041,\r\n        \"self\": \"https://api.zephyrscale.smartbear.com/v2/folders/1695041\"\r\n    },\r\n    \"owner\": {\r\n        \"accountId\": \"60466eb71f946f00696a8b92\",\r\n        \"self\": \"https://ubicquia.atlassian.net/rest/api/2/user?accountId=60466eb71f946f00696a8b92\"\r\n    },\r\n    \"testScript\": {\r\n        \"self\": \"https://api.zephyrscale.smartbear.com/v2/testcases/PAN-T8645/teststeps\"\r\n    },\r\n   \"customFields\": {\r\n        \"Sanity\": false,\r\n        \"Automated\": true,\r\n        \"Review Comments\": \"\",\r\n        \"Regression\": false,\r\n        \"Automation Candidate\": \"Yes\",\r\n        \"Sprint\": \"other\",\r\n        \"Test Type\": \"UI\"\r\n    },\r\n    \"links\": {\r\n        \"self\": \"https://api.zephyrscale.smartbear.com/v2/testcases/13922275/links\",\r\n        \"issues\": [],\r\n        \"webLinks\": []\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/testcases/PAN-T8645",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"testcases",
+						"PAN-T8645"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Update TestCycle",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1523238,\r\n    \"key\": \"PAN-R628\",\r\n    \"name\": \"Automated Build - 09-27-2021 02:48:47 Regression_UI_3_View | EDGE\",\r\n    \"project\": {\r\n        \"id\": 33823,\r\n        \"self\": \"https://api.zephyrscale.smartbear.com/v2/projects/33823\"\r\n    },\r\n    \"jiraProjectVersion\": null,\r\n    \"status\": {\r\n        \"id\": 590694,\r\n        \"self\": \"https://api.zephyrscale.smartbear.com/v2/statuses/590694\"\r\n    },\r\n    \"folder\": {\r\n        \"id\": 1789316,\r\n        \"self\": \"https://api.zephyrscale.smartbear.com/v2/folders/1789316\"\r\n    },\r\n    \"description\": null,\r\n    \"plannedStartDate\": null,\r\n    \"plannedEndDate\": null,\r\n    \"owner\": null,\r\n    \"customFields\": {\r\n        \"Environment\": \"Test\"\r\n    },\r\n    \"links\": {\r\n        \"self\": \"https://api.zephyrscale.smartbear.com/v2/testcycles/1523238/links\",\r\n        \"issues\": [],\r\n        \"webLinks\": [],\r\n        \"testPlans\": []\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/testcycles/PAN-R628",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"testcycles",
+						"PAN-R628"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get TestCase Script",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/testcases/PAN-T8645/testscript",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"testcases",
+						"PAN-T8645",
+						"testscript"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get TestCase Steps",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/testcases/PAN-T8645/teststeps",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"testcases",
+						"PAN-T8645",
+						"teststeps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get TestCase Version",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/testcases/PAN-T8645/versions",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"testcases",
+						"PAN-T8645",
+						"versions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get TestCase Link",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/testcases/PAN-T8645/links",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"testcases",
+						"PAN-T8645",
+						"links"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Statuses",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/statuses?projectKey=PAN&startAt=0&maxResults=1000&statusType=TEST_CASE",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"statuses"
+					],
+					"query": [
+						{
+							"key": "projectKey",
+							"value": "PAN"
+						},
+						{
+							"key": "startAt",
+							"value": "0"
+						},
+						{
+							"key": "maxResults",
+							"value": "1000"
+						},
+						{
+							"key": "statusType",
+							"value": "TEST_CASE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Test Executions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/testexecutions?projectKey=PAN&testCycle=PAN-R269&testCase=PAN-T8645&maxResults=1000&startAt=0",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"testexecutions"
+					],
+					"query": [
+						{
+							"key": "projectKey",
+							"value": "PAN"
+						},
+						{
+							"key": "testCycle",
+							"value": "PAN-R269"
+						},
+						{
+							"key": "testCase",
+							"value": "PAN-T8645"
+						},
+						{
+							"key": "maxResults",
+							"value": "1000"
+						},
+						{
+							"key": "startAt",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Test Execution",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/testexecutions/PAN-E52489",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"testexecutions",
+						"PAN-E52489"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Create Execution",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"projectKey\": \"PAN\",\r\n  \"testCaseKey\": \"PAN-T8686\",\r\n  \"testCycleKey\": \"PAN-R348\",\r\n  \"statusName\": \"Pass\",\r\n \r\n  \"environmentName\": \"Test\",\r\n  \"executionTime\": 103000,\r\n    \"executedById\": \"60466eb71f946f00696a8b92\",\r\n    \"assignedToId\": \"60466eb71f946f00696a8b92\",\r\n  \"comment\": null,\r\n  \"customFields\": {\r\n        \"Browser\": null\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/testexecutions",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"testexecutions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Create TestCycle",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"projectKey\": \"PAN\",\r\n  \"testCaseKey\": \"PAN-T8645\",\r\n  \"testCycleKey\": \"PAN-R269\",\r\n  \"statusName\": \"Pass\",\r\n \r\n  \"environmentName\": \"test\",\r\n  \"actualEndDate\": \"2021-09-06T07:59:31Z\",\r\n  \"executionTime\": 103000,\r\n    \"executedById\": \"60466eb71f946f00696a8b92\",\r\n    \"assignedToId\": \"60466eb71f946f00696a8b92\",\r\n  \"comment\": null,\r\n  \"customFields\": {\r\n        \"Browser\": null\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/testexecutions",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"testexecutions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Junit XML Format Automation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4ZGQzOGUxOS0xZTVjLTNkNzAtOTVjMS1lOTZiY2ZiZThiMTciLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvdWJpY3F1aWEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNjA0NjZlYjcxZjk0NmYwMDY5NmE4YjkyIn19LCJpc3MiOiJjb20ua2Fub2FoLnRlc3QtbWFuYWdlciIsImV4cCI6MTY2MjE5OTkyNywiaWF0IjoxNjMwNjYzOTI3fQ.pypTf0aZnIlmV-MG8J1omtc-cs4LpO_T5RNQ1UfWzWc"
+					},
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "JUnit_Report.xml"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.zephyrscale.smartbear.com/v2/automations/executions/junit?projectKey=PAN&autoCreateTestCases=false&folderType",
+					"protocol": "https",
+					"host": [
+						"api",
+						"zephyrscale",
+						"smartbear",
+						"com"
+					],
+					"path": [
+						"v2",
+						"automations",
+						"executions",
+						"junit"
+					],
+					"query": [
+						{
+							"key": "projectKey",
+							"value": "PAN"
+						},
+						{
+							"key": "autoCreateTestCases",
+							"value": "false"
+						},
+						{
+							"key": "folderType",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
